@@ -1,3 +1,19 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/***Trix***/
+
+.trix-content {
+  color: #111;
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 4px 8px;
+  min-height: 400px;
+  outline: none;
+}
+
+body.page {
+  background-color: #f1f1f1;
+}

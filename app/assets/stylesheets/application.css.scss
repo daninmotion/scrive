@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require trix
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/***Global***/
+
+body {
+  margin-top: 50px;
+}
+
+/***New Page Button ***/
+.btn-success{
+  color: #fff;
+  background-color: #24bd7d;
+  border-color: #24bd7d;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 13px 13px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+/***Landing Page***/
+
+.logo {
+  margin-top: 45%;
+
+  h1 {
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #286090;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: #737d7e;
+  }
+}
+
+.logo .btn-default {
+  color: #286090;
+  background-color: #fff;
+  border-color: #286090;
+}
+
+.logo .btn-default:hover {
+  transition: background-color 0.1s ease;
+  background-color: #286090;
+}
+
+.logo .btn-default:hover {
+  transition: color 0.1s ease;
+  color: white;
+}
+
+.logo .btn {
+  border-radius: 20px;
+  border: 2px solid;
+  padding: 6px 25px;
+}
+

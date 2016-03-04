@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :auth_user
 
   # GET /pages
   # GET /pages.json
@@ -24,7 +25,7 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
-    @page = Page.new(page_params)
+    @page = current_user.pages.new(page_params)
 
     respond_to do |format|
       if @page.save

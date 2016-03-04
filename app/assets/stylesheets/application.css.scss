@@ -21,8 +21,17 @@
 /***Global***/
 
 body {
-  margin-top: 50px;
+  margin-top: 30px;
 }
+
+/***Nav***/
+a {
+  text-decoration: none;
+  color: #286090;
+  font-size: 15px;
+  font-weight: 900;
+}
+
 
 /***New Page Button ***/
 .btn-success{
@@ -42,8 +51,17 @@ body {
 
 /***Landing Page***/
 
+#login {
+  font-weight: 900;
+  color: #286090;
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
 .logo {
-  margin-top: 45%;
+  margin-top: 35%;
 
   h1 {
     font-size: 50px;

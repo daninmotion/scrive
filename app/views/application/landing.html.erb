@@ -1,9 +1,15 @@
+<div class="row" id="login">
+  <div class="col-md-1 col-md-offset-11">
+    <p><%= link_to "LOGIN", new_user_session_path %></p>
+  </div>
+</div>
+
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <div class="text-center logo">
       <h1>Scrive</h1>
       <p>Write, clutter free.</p>
-      <button type="button" class="btn btn-default">Sign up</button>
+      <%= link_to "Sign up", new_user_registration_path, class: "btn btn-default" %>
     </div>
   </div>
 </div>

@@ -79,5 +79,5 @@ Rails.application.configure do
 
   #Stripe
   ENV["stripe_api_key"]
-  ENV["pk_live_4hfpzJLiuyRORXxlIyltAOug"]
+  ENV["stripe_publishable_key"]
 end

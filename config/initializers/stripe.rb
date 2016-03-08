@@ -1,3 +1,3 @@
 require "stripe"
 
-Stripe.api_key = STRIPE_SECRET
+Stripe.api_key = ENV["stripe_api_key"]

@@ -1,0 +1,64 @@
+.sign_up {
+  font-weight: 900;
+  color: #286090;
+
+  h2 {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 900;
+    color: #286090;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+.sign_up .logo {
+  font-size: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #286090;
+}
+
+.sign_up a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #737d7e;
+}
+
+.sign_up .btn-default {
+  color: #286090;
+  background-color: #fff;
+  border-color: #286090;
+}
+
+.sign_up .btn-default:hover {
+  transition: background-color 0.2s ease;
+  background-color: #286090;
+  border-color: #286090;
+}
+
+.sign_up .btn-default:hover {
+  transition: color 0.2s ease;
+  color: white;
+}
+
+.sign_up .btn {
+  border-radius: 20px;
+  border: 2px solid;
+  padding: 6px 25px;
+}
+
+.sign_up p {
+  font-size: 1.5em;
+  color: #737d7e;
+}
+
+.sign_up input, button, select, textarea {
+  font-family: inherit;
+  line-height: inherit;
+  border: none;
+  outline: none;
+}

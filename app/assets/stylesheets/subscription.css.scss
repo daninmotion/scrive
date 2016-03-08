@@ -1,0 +1,27 @@
+#subscribe {
+  margin-left: 50px;
+}
+
+.subscribe .logo {
+  font-size: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #286090;
+}
+.subscribe .btn-success {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.subscribe .btn-success:hover {
+  transition: background-color 0.1s ease;
+  background-color: #28c101;
+  border-color: #28c101;
+}
+
+.subscribe .btn {
+  border-radius: 20px;
+  padding: 6px 10px;
+}

@@ -27,6 +27,8 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'trix', '~> 0.9.5'
 gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'stripe', '~> 1.36', '>= 1.36.1'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc

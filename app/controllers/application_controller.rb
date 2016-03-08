@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
   def auth_user
     redirect_to landing_path unless user_signed_in?
   end
+
+  def current_user_subscribed?
+    user_signed_in? && current_user.subscribed?
+  end
+  helper_method :current_user_subscribed?
+
 end

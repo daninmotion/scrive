@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :pages
+
+  def subscribed?
+    stripe_subscription_id?
+  end
 end

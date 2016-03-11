@@ -1,19 +1,29 @@
-<%= form_for(@page) do |f| %>
-  <% if @page.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
+<div class="row">
+  <div class="col-md-12">
+    <%= form_for @page, :html => { :id => 'page_form' } do |f| %>
+      <% if @page.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
 
-      <ul>
-      <% @page.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+            <% @page.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <%= f.trix_editor :body, class: "trix-content" %>
+      <%= f.trix_editor :body, class: "trix-content" %>
 
-  <div class="actions">
-    <%= f.submit "S", class: "btn btn-primary btn-circle btn-lg active" %>
+      <div class="row">
+        <div class="col-md-1">
+          <span class="save-message text-muted">SAVED</span>
+        </div>
+      </div>
+    <% end %>
   </div>
+</div>
+
+<% content_for :head do %>
+  <%= javascript_include_tag "autosave.form", "data-turbolinks-track" => true %>
 <% end %>

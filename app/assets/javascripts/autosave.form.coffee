@@ -24,4 +24,4 @@ $(document).on 'ready', ->
 
       $('.save-message').show().fadeOut(1000)
 
-  element.addEventListener 'trix-change', $.debounce(1500, saveForm)
+  element.addEventListener 'trix-change', $.debounce(600, saveForm)

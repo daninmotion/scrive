@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jquery-ui
  *= require_tree .
  *= require_self
  *= require trix
@@ -47,6 +48,17 @@ a {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
+}
+
+/***Index Page***/
+.search input, button, select, textarea {
+  font-family: inherit;
+  font-size: 2em;
+  line-height: inherit;
+  border: none;
+
+  outline:0px !important;
+  -webkit-appearance:none;
 }
 
 /***Landing Page***/

@@ -5,7 +5,8 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    @pages = Page.all.order("created_at DESC")
+    query = params[:q].presence || "*"
+    @pages = Page.search(query)
   end
 
   # GET /pages/1
@@ -61,6 +62,10 @@ class PagesController < ApplicationController
       format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def autocomplete
+    render json: Page.search(params[:term], fields: [{body: :text_start}], limit: 10).map(&:body)
   end
 
   private

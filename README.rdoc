@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*Ruby on Rails
 
-Things you may want to cover:
+*Using AJAX and Javascript to implement "auto-save" while writing(for example google docs auto-save)
 
-* Ruby version
+*Elasticsearch
 
-* System dependencies
+*Bootstrap Framework
 
-* Configuration
+*Stripe for subcritption payments
 
-* Database creation
+*Devise
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+...

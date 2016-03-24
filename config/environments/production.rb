@@ -76,8 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  ENV['STRIPE_PUBLIC']
-  ENV['STRIPE_SECRET']
 end
+ENV['STRIPE_PUBLIC']
+ENV['STRIPE_SECRET']
 

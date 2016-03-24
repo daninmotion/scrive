@@ -6,7 +6,7 @@
     <%= form_tag subscribe_path(1), :method => :put do %>
 
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="pk_test_RRnAxeq2kSbp2BFHR2OMfuFV"
+                data-key="ENV['STRIPE_PUBLIC']"
                 data-description="A month's subscription"
                 data-amount="600"
                 data-locale="auto">

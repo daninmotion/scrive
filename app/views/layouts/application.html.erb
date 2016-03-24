@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'https://js.stripe.com/v2/', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= tag :meta, name: "stripe-key", content: STRIPE_PUBLIC %>
   <%= yield(:head) if content_for?(:head) %>
 </head>
 <body class="<%= controller_name_action_name %>">

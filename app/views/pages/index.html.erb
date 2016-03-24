@@ -4,7 +4,7 @@
     <% if current_user_subscribed? %>
       <%= link_to 'P', new_page_path, class: "btn btn-primary btn-circle btn-lg active" %>
     <% else %>
-      <%= link_to "Subscribe to start writing", new_subscription_path %>
+      <%= link_to "Subscribe to start writing", new_subscribe_path %>
     <% end %>
     <br><br />
     <%= link_to "HOME", root_path %>

@@ -5,6 +5,6 @@ class AddStripeDataToUsers < ActiveRecord::Migration
     add_column :users, :card_last4, :string
     add_column :users, :card_exp_month, :integer
     add_column :users, :card_exp_year, :integer
-    add_column :users, :card_type, :string
+    add_column :users, :card_brand, :string
   end
 end

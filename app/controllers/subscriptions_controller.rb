@@ -26,7 +26,7 @@ class SubscriptionsController < ApplicationController
       card_last4: params[:card_last4],
       card_exp_month: params[:card_exp_month],
       card_exp_year: params[:card_exp_year],
-      card_type: params[:card_brand]
+      card_type: params[:card_type]
     )
 
     redirect_to root_path

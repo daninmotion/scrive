@@ -1,0 +1,17 @@
+<div class="row" id="subscribe">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>Subscribe to <span class="logo">Scrive</span></h2>
+    <p>$6.00 a month. You can cancel at any time. </p> 
+    <hr>
+    <%= form_tag subscribe_path(1), :method => :put do %>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_RRnAxeq2kSbp2BFHR2OMfuFV"
+                data-description="A month's subscription"
+                data-amount="600"
+                data-locale="auto">
+      </script>
+
+    <% end %>
+  </div>
+</div>

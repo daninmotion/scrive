@@ -80,3 +80,4 @@ Rails.application.configure do
   ENV['STRIPE_PUBLIC']
   ENV['STRIPE_SECRET']
 end
+

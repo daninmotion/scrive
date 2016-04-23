@@ -7,11 +7,14 @@ class PagesController < ApplicationController
   def index
     query = params[:q].presence || "*"
     @pages = Page.search(query)
+    @pages = current_user.pages #for the current signed in user
   end
+
 
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @page = current_user.pages.find(params[:id])
   end
 
   # GET /pages/new
@@ -21,6 +24,7 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
+    @page = current_user.pages.find(params[:id])
   end
 
   # POST /pages

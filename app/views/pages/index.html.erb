@@ -16,33 +16,35 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-10 col-md-offset-2">
-    <div class="col-md-8 search">
-      <%= form_tag pages_path, method: :get do %>
-        <p>
-          <%= text_field_tag :q, nil, placeholder: "Search" %>
-        </p>
-      <% end %>
-    </div>
-  </div>
-</div>
-<br><br />
-
-<% @pages.each do |page| %>
+<% if current_user %>
   <div class="row">
     <div class="col-md-10 col-md-offset-2">
-      <div class="col-md-8">
-        <%= link_to 'VIEW', page %> |
-        <%= link_to 'EDIT', edit_page_path(page) %> |
-        <%= link_to 'DELETE', page, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <br><br />
-        <p class="time text-muted"><%= page.created_at.strftime("%b %d, %Y") %></p>
-        <%= page.body.html_safe %>
-        <hr class="articlesplit"></hr>
+      <div class="col-md-8 search">
+        <%= form_tag pages_path, method: :get do %>
+          <p>
+            <%= text_field_tag :q, nil, placeholder: "Search" %>
+          </p>
+        <% end %>
       </div>
     </div>
   </div>
+  <br><br />
+
+  <% @pages.each do |page| %>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="col-md-8">
+          <%= link_to 'VIEW', page %> |
+          <%= link_to 'EDIT', edit_page_path(page) %> |
+          <%= link_to 'DELETE', page, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <br><br />
+          <p class="time text-muted"><%= page.created_at.strftime("%b %d, %Y") %></p>
+          <%= page.body.html_safe %>
+          <hr class="articlesplit"></hr>
+        </div>
+      </div>
+    </div>
+  <% end %>
 <% end %>
 
   

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :subscribe
   resource :subscription
 
-  root 'pages#index'
+  root 'application#landing'
 
   get '/landing', to: 'application#landing'
 end

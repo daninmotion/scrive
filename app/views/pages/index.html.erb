@@ -1,18 +1,18 @@
 
 <div class="row">
-  <div class="col-md-1">
-    <% if current_user %>
-      <%= link_to 'P', new_page_path, class: "btn btn-primary btn-circle btn-lg active" %>
-    <% else %>
-      <%= link_to "Subscribe to start writing", new_subscribe_path %>
-    <% end %>
-    <br><br />
-    <%= link_to "HOME", root_path %>
-  </div>
-
-  <div class="col-md-offset-11">
-    <p><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></p>
-    <p><%= link_to "SETTINGS", edit_user_registration_path %><p>
+  <div class="dashboard">
+    <div class="col-md-11 col-md-offset-1">
+      <% if current_user %>
+        <%= link_to 'P', new_page_path, class: "btn btn-primary btn-circle btn-lg active" %>
+      <% else %>
+        <%= link_to "Subscribe to start writing", new_subscribe_path %>
+      <% end %>
+      <br><br />
+      <p><%= link_to "HOME", root_path %></p>
+      <p><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %>
+      </p>
+      <p><%= link_to "SETTINGS", edit_user_registration_path %><p>
+    </div>
   </div>
 </div>
 

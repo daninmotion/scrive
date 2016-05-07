@@ -23,6 +23,15 @@ body.page {
   font-weight: bold;
 }
 
+/***Dashboard***/
+.dashboard, .affix-top {
+  position: static;
+}
+
+.dashboard, .affix {
+  position: fixed;
+}
+
 /***Content***/
 
 .articlesplit {

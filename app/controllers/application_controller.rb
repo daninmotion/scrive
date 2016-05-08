@@ -12,4 +12,12 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user_subscribed?
 
+  def authenticate_user!
+    if user_signed_in?
+      super
+    else
+      redirect_to landing_path
+    end
+  end
+
 end

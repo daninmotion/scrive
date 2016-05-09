@@ -3,4 +3,3 @@ jQuery ->
     source: "/pages/autocomplete",
     minLength: 2
   )
-  

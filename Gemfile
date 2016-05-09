@@ -31,6 +31,7 @@ gem 'stripe', '~> 1.36', '>= 1.36.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'searchkick', '~> 1.2', '>= 1.2.1'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'will_paginate', '~> 3.1'
 
 
 # bundle exec rake doc:rails generates the API under doc/api.

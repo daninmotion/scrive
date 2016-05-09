@@ -17,3 +17,4 @@
 //= require trix
 //= require turbolinks
 //= require_tree ../../../vendor/
+

@@ -5,9 +5,9 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
+    @pages = current_user.pages #for the current signed in user
     query = params[:q].presence || "*"
     @pages = Page.search(query)
-    @pages = current_user.pages #for the current signed in user
     @pages = Page.paginate(:page => params[:page], :per_page => 5)
   end
 

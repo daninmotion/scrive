@@ -7,8 +7,8 @@ class PagesController < ApplicationController
   def index
     @pages = current_user.pages #for the current signed in user
     query = params[:q].presence || "*"
-    @pages = Page.search(query)
-    @pages = Page.paginate(:page => params[:page], :per_page => 5)
+    @pages = current_user.pages.search(query)
+    @pages = current_user.pages.paginate(:page => params[:page], :per_page => 5)
   end
 
 

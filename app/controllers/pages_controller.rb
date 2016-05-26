@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   def index
     query = params[:q].presence || "*"
     @pages = Page.search(query)
-    @pages = current_user.pages.order(created_at: :desc) #for the current signed in user
+    @pages = current_user.pages #for the current signed in user
     @pages = Page.paginate(:page => params[:page], :per_page => 5)
   end
 
